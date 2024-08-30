@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px; /* Increase width for 16 bits */
+    margin: 0 auto;
+}
+
+.bit-container, .labels {
+    display: grid;
+    grid-template-columns: repeat(16, 40px); /* 16 columns for 16 bits */
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.bit-container input {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.labels span {
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#output {
+    margin-top: 20px;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+#calculation {
+    font-size: 18px;
+    display: inline-block; /* Keep calculation in a single line */
+}
+
+#result {
+    font-size: 22px;
+    font-weight: bold;
+}

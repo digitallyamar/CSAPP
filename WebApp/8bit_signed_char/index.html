@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-bit Signed Char Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>8-bit Signed Char Visualization</h1>
+        <div class="bit-inputs">
+            <div>
+                <input type="text" id="bit7" maxlength="1" value="0">
+                <div id="label7">-2<sup>7</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit6" maxlength="1" value="0">
+                <div id="label6">2<sup>6</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit5" maxlength="1" value="0">
+                <div id="label5">2<sup>5</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit4" maxlength="1" value="0">
+                <div id="label4">2<sup>4</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit3" maxlength="1" value="0">
+                <div id="label3">2<sup>3</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit2" maxlength="1" value="0">
+                <div id="label2">2<sup>2</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit1" maxlength="1" value="0">
+                <div id="label1">2<sup>1</sup> * 0</div>
+            </div>
+            <div>
+                <input type="text" id="bit0" maxlength="1" value="0">
+                <div id="label0">2<sup>0</sup> * 0</div>
+            </div>
+        </div>
+        <button onclick="calculateValue()">Calculate Value</button>
+        <div class="result">
+            <h2>Calculation: <span id="calculation"></span></h2>
+            <h2>Resulting Value: <span id="result">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
